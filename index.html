@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #main_container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        place-items: center;
+        border: 2px solid gray;
+        padding: 10px;
+      }
+      .card_container img {
+        width: 250px;
+        height: 250px;
+        border-radius: 5px;
+      }
+      .card_container button {
+        padding: 7px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+        width: 60%;
+        color: white;
+        background-color: rgb(246, 62, 30);
+        border: none;
+      }
+      .card_container {
+        box-shadow: rgba(162, 236, 4, 0.2) 0px 7px 29px 0px;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        border-radius: 10px ;
+        background-color: rgba(246, 148, 69, 0.144);
+      }
+      h3 {
+        font-size: 18px;
+        font-weight: 500;
+        color: rgba(255, 0, 0, 0.795);
+      }
+      p {
+        font-size: 15px;
+        font-weight: 500;
+        color: rgba(99, 16, 231, 0.795);
+      }
+      .card_container:hover {
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+          rgba(239, 12, 12, 0.23) 0px 6px 6px;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1080px) {
+        #main_container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media screen and (min-width: 200px) and (max-width: 767px) {
+        #main_container {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="main_container"></div>
+  </body>
+  <script>
+    let main_container = document.getElementById("main_container");
+    let card = document.createElement("div");
+    card.classList.add("card_container");
+    let image = document.createElement("img");
+    image.src = "download.jpg";
+    let title = document.createElement("h3");
+    title.innerText = "Girgit";
+    let details = document.createElement("p");
+    details.innerText =
+      "Chameleons or chamaeleons are a distinctive and highly specialized clade of Old World lizards with 200 species described as of June 2015. ";
+    let btn = document.createElement("button");
+    btn.innerText = "Submit";
+    card.append(image, title, details, btn);
+    main_container.append(card);
+
+    let card1 = document.createElement("div");
+    card1.classList.add("card_container");
+    let image1 = document.createElement("img");
+    image1.src = "download.jpg";
+    let title1 = document.createElement("h3");
+    title1.innerText =
+      "Girgit";
+    let details1 = document.createElement("p");
+    details1.innerText =
+      "Chameleons or chamaeleons are a distinctive and highly specialized clade of Old World lizards with 200 species described as of June 2015. ";
+    let btn1 = document.createElement("button");
+    btn1.innerText = "Submit";
+    card1.append(image1, title1, details1, btn1);
+    main_container.append(card1);
+
+    let card2 = document.createElement("div");
+    card2.classList.add("card_container");
+    let image2 = document.createElement("img");
+    image2.src = "download.jpg";
+    let title2 = document.createElement("h3");
+    title2.innerText =
+      "Girgit";
+    let details2 = document.createElement("p");
+    details2.innerText =
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui ad vero?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui ad vero?";
+    let btn2 = document.createElement("button");
+    btn2.innerText = "Submit";
+    card2.append(image2, title2, details2, btn2);
+    main_container.append(card2);
+
+    let card3 = document.createElement("div");
+    card3.classList.add("card_container");
+    let image3 = document.createElement("img");
+    image3.src = "download.jpg";
+    let title3 = document.createElement("h3");
+    title3.innerText =
+      "Girgit";
+    let details3 = document.createElement("p");
+    details3.innerText =
+      "Chameleons or chamaeleons are a distinctive and highly specialized clade of Old World lizards with 200 species described as of June 2015. ";
+    let btn3 = document.createElement("button");
+    btn3.innerText = "Submit";
+    card3.append(image3, title3, details3, btn3);
+    main_container.append(card3);
+
+    let card4 = document.createElement("div");
+    card4.classList.add("card_container");
+    let image4 = document.createElement("img");
+    image4.src = "download.jpg";
+    let title4 = document.createElement("h3");
+    title4.innerText =
+      "Girgit";
+    let details4 = document.createElement("p");
+    details4.innerText =
+      "Chameleons or chamaeleons are a distinctive and highly specialized clade of Old World lizards with 200 species described as of June 2015. ";
+    let btn4 = document.createElement("button");
+    btn4.innerText = "Submit";
+    card4.append(image4, title4, details4, btn4);
+    main_container.append(card4);
+
+    let card5 = document.createElement("div");
+    card5.classList.add("card_container");
+    let image5 = document.createElement("img");
+    image5.src = "download.jpg";
+    
+    let title5 = document.createElement("h3");
+    title5.innerText =
+      "Girgit";
+    let details5 = document.createElement("p");
+    details5.innerText =
+      "Chameleons or chamaeleons are a distinctive and highly specialized clade of Old World lizards with 200 species described as of June 2015.";
+    let btn5 = document.createElement("button");
+    btn5.innerText = "submit";
+    card5.append(image5, title5, details5, btn5);
+    main_container.append(card5);
+
+    let card6 = document.createElement("div");
+    card6.classList.add("card_container");
+    let image6 = document.createElement("img");
+    image6.src = "download.jpg";
+    let title6 = document.createElement("h3");
+    title6.innerText =
+      "Girgit";
+    let details6 = document.createElement("p");
+    details6.innerText =
+      "Chameleons or chamaeleons are a distinctive and highly specialized clade of Old World lizards with 200 species described as of June 2015.?";
+    let btn6 = document.createElement("button");
+    btn6.innerText = "Submit";
+    card6.append(image6, title6, details6, btn6);
+    main_container.append(card6);
+
+    let card7 = document.createElement("div");
+    card7.classList.add("card_container");
+    let image7 = document.createElement("img");
+    image7.src = "download.jpg";
+    let title7 = document.createElement("h3");
+    title7.innerText =
+      "Girgit";
+    let details7 = document.createElement("p");
+    details7.innerText =
+      "Chameleons or chamaeleons are a distinctive and highly specialized clade of Old World lizards with 200 species described as of June 2015.?";
+    let btn7 = document.createElement("button");
+    btn7.innerText = "Submit";
+    card7.append(image7, title7, details7, btn7);
+    main_container.append(card7);
+    console.log(main_container);
+  </script>
+</html>
